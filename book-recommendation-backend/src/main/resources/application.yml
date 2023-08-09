@@ -2,3 +2,8 @@ quarkus:
   mongodb:
     connection-string: mongodb://localhost:27017
     database: book_recommendation
+  http:
+    port: 8081
+  oidc:
+    auth-server-url: http://0.0.0.0:8080/admin/master/console/#/quarkus
+    client-id: quarkus-service
