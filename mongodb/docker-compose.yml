@@ -8,3 +8,4 @@ services:
       - mongodb_data_container:/book_recommendation/db
 volumes:
   mongodb_data_container:
+  
