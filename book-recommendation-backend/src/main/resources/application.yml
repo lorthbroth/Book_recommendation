@@ -21,3 +21,4 @@ quarkus:
         enable: true
     devservices:
       enabled: false
+
