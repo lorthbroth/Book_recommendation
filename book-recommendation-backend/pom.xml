@@ -72,6 +72,10 @@
       <artifactId>quarkus-keycloak</artifactId>
       <version>0.23.2</version>
     </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-keycloak-authorization</artifactId>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
