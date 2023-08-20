@@ -1,13 +1,13 @@
 quarkus:
-  # Databses
+  # Databases
   mongodb:
     connection-string: mongodb://localhost:27017
     database: book_recommendation
   http:
-    port: 8081
+    port: 8090
   # keycloak
   oidc:
-    auth-server-url: http:localhost:8080/realms/Qaurkus_book_project
+    auth-server-url: http://localhost:8080/auth/realms/Qaurkus_book_project
     client-id: quarkusService
     credentials:
       secret: LFPPaEnpLyLdfR3jtSIC6EAEwqC03xND
@@ -15,10 +15,7 @@ quarkus:
       verification: none
     authentication:
       user-info-required: true
-    keycloak:
-      realm: Qaurkus_book_project
-      policy-enforcer:
-        enable: true
-    devservices:
-      enabled: false
-
+  keycloak:
+    realm: Qaurkus_book_project
+    policy-enforcer:
+      enable: true
