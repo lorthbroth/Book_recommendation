@@ -63,6 +63,15 @@
       <artifactId>quarkus-container-image-docker</artifactId>
       <version>3.2.4.Final</version>
     </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-oidc</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-keycloak</artifactId>
+      <version>0.23.2</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
