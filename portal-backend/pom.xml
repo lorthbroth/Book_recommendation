@@ -50,6 +50,10 @@
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-config-yaml</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5</artifactId>
       <scope>test</scope>
     </dependency>
@@ -135,4 +139,10 @@
       </properties>
     </profile>
   </profiles>
+  <repositories>
+    <repository>
+      <id>java-net-repo</id>
+      <url>https://maven.java.net/content/repositories/public/</url>
+    </repository>
+  </repositories>
 </project>
