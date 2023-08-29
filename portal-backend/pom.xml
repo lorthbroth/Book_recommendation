@@ -54,6 +54,10 @@
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-rest-client-reactive-jackson</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5</artifactId>
       <scope>test</scope>
     </dependency>
@@ -68,6 +72,20 @@
       <version>3.2.4.Final</version>
     </dependency>
   </dependencies>
+  <repositories>
+    <repository>
+      <id>java-net-repo</id>
+      <url>https://maven.java.net/content/repositories/public/</url>
+    </repository>
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>Maven Central</name>
+      <url>https://repo1.maven.org/maven2</url>
+    </repository>
+  </repositories>
   <build>
     <plugins>
       <plugin>
@@ -139,10 +157,4 @@
       </properties>
     </profile>
   </profiles>
-  <repositories>
-    <repository>
-      <id>java-net-repo</id>
-      <url>https://maven.java.net/content/repositories/public/</url>
-    </repository>
-  </repositories>
 </project>
