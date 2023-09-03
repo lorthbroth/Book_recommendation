@@ -4,7 +4,6 @@ import com.bmw.model.Book;
 import com.bmw.model.User;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
-import org.jboss.logging.logger;
 
 import java.util.List;
 
@@ -14,5 +13,4 @@ import java.util.List;
 @Consumes(MediaType.APPLICATION_JSON)
 public class BookRecommendationResource {
 
-    private static final logger LOGGER =
 }
