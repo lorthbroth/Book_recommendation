@@ -5,6 +5,7 @@ quarkus:
     connection-string: mongodb://localhost:27017
     database: book_recommendation
   #keycloak configs
+  auth:
   oidc:
     auth-server-url: http://localhost:8080/auth/realms/Qaurkus_book_project
     introspection-path: /introspect
