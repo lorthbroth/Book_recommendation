@@ -74,7 +74,7 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-container-image-docker</artifactId>
-      <version>3.2.4.Final</version>
+      <version>3.3.0</version>
     </dependency>
   </dependencies>
   <repositories>
