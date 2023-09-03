@@ -4,6 +4,7 @@ import io.quarkus.mongodb.panache.PanacheMongoEntity;
 import io.quarkus.mongodb.panache.common.MongoEntity;
 @MongoEntity(collection = "books")
 public class Book extends PanacheMongoEntity {
+
     private String title;
     private String author;
     private String genre;
@@ -37,4 +38,5 @@ public class Book extends PanacheMongoEntity {
     public void setGenre(String genre) {
         this.genre = genre;
     }
+
 }
