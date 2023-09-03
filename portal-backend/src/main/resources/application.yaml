@@ -4,13 +4,13 @@ quarkus:
   mongodb:
     connection-string: mongodb://localhost:27017
     database: book_recommendation
-  #keycloak configs
+  # Keycloak configs
   auth:
-  oidc:
-    auth-server-url: http://localhost:8080/auth/realms/Qaurkus_book_project
-    introspection-path: /introspect
-    client-id: quarkusService
-    credentials:
-      secret: LFPPaEnpLyLdfR3jtSIC6EAEwqC03xND
-    authentication:
-      user-info-required: true
+    oidc:
+      auth-server-url: http://localhost:8080/auth/realms/Qaurkus_book_project
+      introspection-path: /introspect
+      client-id: quarkusService
+      credentials:
+        secret: LFPPaEnpLyLdfR3jtSIC6EAEwqC03xND
+      authentication:
+        user-info-required: true
