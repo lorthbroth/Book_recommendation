@@ -1,16 +1,2 @@
-quarkus:
-  http:
-    port: 8888
-  mongodb:
-    connection-string: mongodb://localhost:27017
-    database: book_recommendation
-  # Keycloak configs
-  auth:
-    oidc:
-      auth-server-url: http://localhost:8080/auth/realms/Qaurkus_book_project
-      introspection-path: /introspect
-      client-id: quarkusService
-      credentials:
-        secret: LFPPaEnpLyLdfR3jtSIC6EAEwqC03xND
-      authentication:
-        user-info-required: true
+greeting:
+  message: "hello"

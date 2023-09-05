@@ -1,15 +1,8 @@
-# Backend Setup
+# portal-backend
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
-
-### Prerequisites
-
-- Java Development Kit (JDK) 11 or later
-- Node.js and npm
-- MongoDB installed and running
-
 
 ## Running the application in dev mode
 
@@ -42,26 +35,34 @@ The application, packaged as an _über-jar_, is now runnable using `java -jar ta
 
 You can create a native executable using: 
 ```shell script
-./mvnw package -Pnative
+./mvnw package -Dnative
 ```
 
 Or, if you don't have GraalVM installed, you can run the native executable build in a container using: 
 ```shell script
-./mvnw package -Pnative -Dquarkus.native.container-build=true
+./mvnw package -Dnative -Dquarkus.native.container-build=true
 ```
 
-You can then execute your native executable with: `./target/code-with-quarkus-1.0.0-SNAPSHOT-runner`
+You can then execute your native executable with: `./target/portal-backend-1.0.0-SNAPSHOT-runner`
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.
 
 ## Related Guides
 
-- MongoDB with Panache ([guide](https://quarkus.io/guides/mongodb-panache)): Simplify your persistence code for MongoDB via the active record or the repository pattern
+- Keycloak Authorization ([guide](https://quarkus.io/guides/security-keycloak-authorization)): Policy enforcer using Keycloak-managed permissions to control access to protected resources
 - RESTEasy Reactive ([guide](https://quarkus.io/guides/resteasy-reactive)): A Jakarta REST implementation utilizing build time processing and Vert.x. This extension is not compatible with the quarkus-resteasy extension, or any of the extensions that depend on it.
-- SmallRye JWT ([guide](https://quarkus.io/guides/security-jwt)): Secure your applications with JSON Web Token
-- SmallRye Context Propagation ([guide](https://quarkus.io/guides/context-propagation)): Propagate contexts between managed threads in reactive applications
+- OpenID Connect ([guide](https://quarkus.io/guides/security-openid-connect)): Verify Bearer access tokens and authenticate users with Authorization Code Flow
+- YAML Configuration ([guide](https://quarkus.io/guides/config-yaml)): Use YAML to configure your Quarkus application
 
 ## Provided Code
+
+### YAML Config
+
+Configure your application with YAML
+
+[Related guide section...](https://quarkus.io/guides/config-reference#configuration-examples)
+
+The Quarkus application configuration is located in `src/main/resources/application.yml`.
 
 ### RESTEasy Reactive
 
