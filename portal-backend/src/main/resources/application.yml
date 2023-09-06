@@ -1,2 +1,5 @@
+Quarkus:
+  http:
+    port: 8081
 greeting:
   message: "hello"
